@@ -2,52 +2,116 @@
 <html>
 <head>
 <center>
-<div>
-<div><div class="home"><a href="index.html"><img src="home.png" class="home"></a></div>
-<div class="one"> <a href="#">ABOUT US</a> </div>
-<div class="two"><a href="index2.html">RESTAURANTS</a></div>
-<div class="three"><a href="#">RECIPES</a></div>
-<div class="four"><a href="http://instagram.com/theFrenchFoodies">@theFrenchFoodies</a></div>
-<div class="five"><a href="http://instagram.com/thefoodiesdiary">@TheFoodiesDiary</a></div>
-<div class="six"><a href="#">CONTACT</a></div>
+<body link ="white">
+<div class="menu">
+<div class="home"><a href="index.html"><img src="home.png" class="home"></a></div>
+<div class="plane"><a href="#"><img src="plane.png" class="plane"></a></div>
+<div class="location"> <a href="index2.html"><img src="location.png" class="location"></a></div>
+<div class="eat"> <a href="#"><img src="eat.png" class="eat"></a></div>
+<div class="phone"> <a href="#"><img src="phone.png" class="phone"></a></div>
+<div class="search"> <a href="#"><img src="search.png" class="search"></a></div>
+
+</body>
+<br>
+<br>
+<br>
+	<title> Travel with me </title>
+</head>
+<h1 id="name"> TRAVEL  WITH  ME</h1>
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
 </div>
 </center>
-<br>
-	<title> The Foodies </title>
-</head>
-<center> <body>
-<h1> THE FOODIES <img src="plate.png" alt="food" class="food" align="margin-right"> </h1>
-<p> eating our way through London </p></center>
-<h2> Latest posts </h2>
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="giphy.jpg" class="fullscreen-bg__video">
+        <source src="giphy.webm" type="video/webm">
+        <source src="giphy.mp4" type="video/mp4">
+        <source src="giphy.ogv" type="video/ogg">
+    </video>
+</div>
 
-<img src="mozza.png" alt="Burrata" class="mozza" hspace="50">
-<img src="toast.png" alt="Avocado Toast" class="toast" hspace="50">
-<h3 class="burrata">Burrata @ <a href="http://fucina.co.uk">Fucina</a>, London</h3>
-<h3 class="toast">Avocado Toast @ <a href="http://gailsbread.co.uk">Gail's</a>, London</h3>
+<div class="social">
+<div class="insta"><a href="#"><img src="insta.png" class="insta"></a></div>
+<div class="facebook"><a href="#"><img src="facebook.png" class="facebook"></a></div>
+<div class="pin"> <a href="#"><img src="pin.png" class="pin"></a></div>
+<div class="twitter"> <a href="#"><img src="twitter.png" class="twitter"></a></div>
+</div>
+
 <br>
 <br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+			$("#name").fadeIn(2000).delay(1000);
+	});
+</script>
+
 <style type="text/css">
-body {background-color: #ffffcc;}
-h1 {color:black;padding-top: 30px;font-size: 50px; font-weight: bolder;}
+#name {display: none;}
+body {margin: 0; padding: 0;}
+a {color: white;}
+div.menu {padding-top: 20px; color: white;}
+div {background-repeat: }
+h1 {color:white;padding-top: 150px;font-size: 100px; font-family: "Dosis", lighter;}
 p {font-size: 30px; padding-bottom: 20px;}
-body {color: black;
-font-family: Century;}
-div.home {margin-right: 70px; float: left; padding-left: 120px;}
-div.one {margin-right: 70px; float:left;}
-div.two {margin-right: 70px; float:left;}
-div.three {margin-right: 70px; float:left;}
-div.four {margin-right: 70px; float:left;}
-div.five {margin-right: 70px; float:left;}
-div.six {margin-right: 70px; float:left;}
-img.mozza {height: 400px; width: 350px; border: 1.5px solid black;margin-left: 270px;}
-img.toast {height: 400px; width: 350px; border: 1.5px solid black;}
+div.home {margin-right: 150px; float: left; padding-left: 215px;}
+div.plane {margin-right: 150px; float:left;}
+div.location {margin-right: 150px; float:left;}
+div.eat {margin-right: 150px; float:left;}
+div.phone {margin-right: 150px; float:left;}
+div.search {float:left;}
+
+div.social { position: relative; height: 24px; position: absolute; right: 0; bottom: 0; padding-bottom: 20px;}
+
+div.insta {margin-right: 20px; float: right; padding-right: : 50px;}
+div.facebook {margin-right: 20px; float:right;}
+div.pin {margin-right: 20px; float:right;}
+div.twitter {margin-right: 20px; float:right; }
+
+.fullscreen-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fullscreen-bg video {
+	 min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 h2 {margin-left: 270px; font-size: 25px;}
-div {font-family: georgia; color: black; text-align: center; margin-left: auto;}
+div {font-family: Century Gothic; color: black; text-align: center; margin-left: auto;}
 h3{font-weight: lighter;}
 h3.burrata {float:left ; padding-left: 325px;}
 h3.toast {float:left; margin-left: 220px ;}
-img.food {height: 60px; width: 60px;}
 img.home {height: 25px; width: 25px; }
+img.plane {height: 25px; width: 25px; }
+img.eat {height: 25px; width: 25px; }
+img.location {height: 25px; width: 25px; }
+img.search {height: 25px; width: 25px; }
+img.phone {height: 25px; width: 25px; }
+
+img.facebook {height: 30px; width: 30px; position: bottom;}
+img.twitter {height: 30px; width: 30px; }
+img.pin {height: 30px; width: 30px; }
+img.insta {height: 30px; width: 30px; }
 </style>
 </body>
 </html>
